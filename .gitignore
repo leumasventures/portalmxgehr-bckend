@@ -74,3 +74,5 @@ storage/uploads/
 
 # TypeScript
 *.tsbuildinfo
+node_modules/
+.env

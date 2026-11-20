@@ -9,7 +9,8 @@
   "scripts": {
     "start": "node src/server.js",
     "migrate": "node src/db/migrate.js",
-    "create-admin": "node src/scripts/create-admin.js"
+    "create-admin": "node src/scripts/create-admin.js",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@prisma/adapter-mariadb": "7.10.1",
