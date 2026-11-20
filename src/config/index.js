@@ -11,7 +11,7 @@ const boolFromString = z
 
 const envSchema = z
   .object({
-    NODE_ENV: z.enum(["development", "production", "test"]).default("development"),
+    NODE_ENV: z.enum(["production", "development", "test"]).default("production"),
     PORT: z.coerce.number().int().positive().default(4000),
     LOG_LEVEL: z.enum(["debug", "info", "warn", "error"]).default("info"),
     // Set to 1 when running behind a proxy/load balancer (needed for correct client IPs / rate limiting).
