@@ -11,7 +11,7 @@ const boolFromString = z
 
 const envSchema = z
   .object({
-    NODE_ENV: z.enum(["production", "development", "test"]).default("production"),
+    NODE_ENV: z.enum(["development", "production", "test"]).default("development"),
     PORT: z.coerce.number().int().positive().default(4000),
     LOG_LEVEL: z.enum(["debug", "info", "warn", "error"]).default("info"),
     // Set to 1 when running behind a proxy/load balancer (needed for correct client IPs / rate limiting).
@@ -125,7 +125,7 @@ function buildDbConfig() {
 
 module.exports = {
   nodeEnv: env.NODE_ENV,
-  isProd: env.NODE_ENV === "production",
+  isProd: env.NODE_ENV === "development",
   port: env.PORT,
   logLevel: env.LOG_LEVEL,
   trustProxy: env.TRUST_PROXY,
