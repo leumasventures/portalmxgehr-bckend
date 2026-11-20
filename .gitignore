@@ -1,0 +1,76 @@
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Testing and coverage
+coverage/
+.nyc_output/
+
+# Cache
+.cache/
+.parcel-cache/
+.eslintcache/
+.vite/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Runtime files
+pids/
+*.pid
+*.seed
+
+# Database files and backups
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+backups/
+
+# Security certificates and private keys
+*.pem
+*.key
+*.crt
+
+# Uploaded patient files
+uploads/
+storage/uploads/
+
+# Deployment
+.vercel/
+.netlify/
+
+# TypeScript
+*.tsbuildinfo

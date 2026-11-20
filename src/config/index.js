@@ -34,7 +34,7 @@ const envSchema = z
     DB_TIMEZONE: z.string().default("Z"), // store/read everything as UTC
 
     // ---- Auth ----
-    JWT_SECRET: z.string().min(32, "JWT_SECRET must be at least 32 characters"),
+    JWT_SECRET: z.string().min(32, "2d9b5b42de550f1e459c78b5f6889002f242d66c9d8740a92fc4a955323d037b"),
     JWT_EXPIRES_IN: z.string().default("8h"),
     BCRYPT_ROUNDS: z.coerce.number().int().min(10).max(15).default(12),
 

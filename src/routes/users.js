@@ -5,7 +5,7 @@ const express = require("express");
 const { z } = require("zod");
 const db = require("../db");
 const { audit } = require("../audit");
-const { resetPassword, hashPassword, generateTempPassword, nowSeconds } = require("../password");
+const { resetPassword, hashPassword, generateTempPassword, nowSeconds } = require("../passwords");
 const { authenticate, requireRole } = require("../middleware/auth");
 
 const router = express.Router();

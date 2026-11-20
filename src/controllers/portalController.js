@@ -3,7 +3,7 @@
 const crypto = require("crypto");
 const db = require("../db");
 const { audit } = require("../audit");
-const { hashPassword, generateTempPassword, resetPassword, nowSeconds } = require("../password");
+const { hashPassword, generateTempPassword, resetPassword, nowSeconds } = require("../passwords");
 const { noStore } = require("../utils");
 
 async function status(req, res) {

@@ -6,7 +6,7 @@ const crypto = require("crypto");
 const express = require("express");
 const db = require("../db");
 const { audit } = require("../audit");
-const { hashPassword, generateTempPassword, resetPassword, nowSeconds } = require("../password");
+const { hashPassword, generateTempPassword, resetPassword, nowSeconds } = require("../passwords");
 const { authenticate, requireRole } = require("../middleware/auth");
 
 const router = express.Router();

@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
 const config = require("../config");
 const db = require("../db");
-const { ISSUER } = require("../token");
+const { ISSUER } = require("../tokens");
 
 function build(allowPasswordChange) {
   return async function authenticate(req, res, next) {

@@ -4,7 +4,7 @@ const crypto = require("crypto");
 const { z } = require("zod");
 const db = require("../db");
 const { audit } = require("../audit");
-const { resetPassword, hashPassword, generateTempPassword, nowSeconds } = require("../password");
+const { resetPassword, hashPassword, generateTempPassword, nowSeconds } = require("../passwords");
 const { escapeLike, paging, noStore } = require("../utils");
 
 // Patient logins are created from the patient record (see portalController), not here.

@@ -5,8 +5,8 @@ const { z } = require("zod");
 const config = require("../config");
 const db = require("../db");
 const { audit } = require("../audit");
-const { issueToken } = require("../token");
-const { hashPassword, nowSeconds } = require("../password");
+const { issueToken } = require("../tokens");
+const { hashPassword, nowSeconds } = require("../passwords");
 const { authenticateAllowPasswordChange: authenticate } = require("../middleware/auth");
 
 const router = express.Router();
